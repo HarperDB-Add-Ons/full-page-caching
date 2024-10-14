@@ -16,4 +16,4 @@ roles: # This can define the roles that are used in the application
 
 # Add origin configuration
 origin:
-  url: "https:google.com"  # Define the base URL for the origin server here
+  url: "https:example.com"  # Define the base URL for the origin server here
