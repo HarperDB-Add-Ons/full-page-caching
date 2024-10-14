@@ -2,5 +2,8 @@
   "name": "application-template",
   "version": "1.0.0",
   "description": "A template for building HarperDB applications",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
 }
