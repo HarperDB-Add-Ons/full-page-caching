@@ -1,5 +1,12 @@
 // import PageCache table from schemas.graphql
 const { PageCache } = tables;
+import fs from 'fs';     // File system module to read the file
+import yaml from 'js-yaml'; // YAML parser
+
+// Load and parse the YAML file manually
+const config = yaml.load(fs.readFileSync('./config.yaml', 'utf8'));
+
+
 
 // ***********EXAMPLE IMPLEMENTATION OF HTML-ONLY CACHE RETURN************
 
@@ -51,9 +58,13 @@ export class PageCacheResource extends PageCache {
 
   // Fetch the page and update the cache
   async get() {
-    const pageURL = "https://www.google.com/"; // URL of the page to cache
+    
+    // Extract the origin URL
+    const origin = config.origin.url;
 
-    const response = await fetch(pageURL); // Fetch the page content
+    const path  = "/"; // URL path of the page to cache
+
+    const response = await fetch(`${origin}${path}`); // Fetch the page content
 
     /**
      * To save response as binary data, use response.bytes() instead of response.text()
