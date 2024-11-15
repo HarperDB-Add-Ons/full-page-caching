@@ -14,9 +14,7 @@ You can visit the links below to learn more about HarperDB and application compo
 ### Prerequisites
 
 Before cloning this repository, ensure HarperDB is installed on your local machine. If it's not already installed,
-copy the code snippet below into your terminal to install HarperDB."
-
-
+execute this in a terminal to install HarperDB."
 
 ```npm i -g harperdb``` 
 
@@ -24,7 +22,6 @@ copy the code snippet below into your terminal to install HarperDB."
 ### ***Installation***
 
 1. ***Clone this repository to your local machine***
-
 
 
 >>>> ```git clone <repository-url>```
@@ -40,7 +37,7 @@ copy the code snippet below into your terminal to install HarperDB."
 
 ## Implementing the Caching Solution
 
-To implement caching, you need to modify the PageCacheResource class located in the resource.js file. 
+To implement caching, you may want to modify the sourcing function located in the resource.js file. 
 
 The class is responsible for fetching the web page content and storing it in a cache.
 
@@ -50,19 +47,15 @@ Follow the comments in the code for guidance on how to set it up.
 
 ## Example
     
-***visit the following URL in the browser to access the webpage cached***: 
+***visit the following URL in the browser as an example of accessing a webpage throug hthe cache***: 
 
-``` http://localhost:9926/PageCache/examplePage```
+``` http://localhost:9926/PageCache/solutions/distributed-applications```
 
 
 
 ## Learn more about caching with HarperDB visit:
 
 - [HarperDB Application Caching Docs](https://docs.harperdb.io/docs/developers/applications/caching)
-
-- {Link to Dev Center Blog}
-
-- {Link to Demo Video}
 
 
 
