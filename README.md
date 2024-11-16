@@ -47,7 +47,7 @@ Follow the comments in the code for guidance on how to set it up.
 
 ## Example
     
-***visit the following URL in the browser as an example of accessing a webpage throug hthe cache***: 
+***visit the following URL in the browser as an example of accessing a webpage through the cache***: 
 
 ``` http://localhost:9926/PageCache/solutions/distributed-applications```
 
