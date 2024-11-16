@@ -14,7 +14,7 @@ You can visit the links below to learn more about HarperDB and application compo
 ### Prerequisites
 
 Before cloning this repository, ensure HarperDB is installed on your local machine. If it's not already installed,
-execute this in a terminal to install HarperDB."
+execute this in a terminal to install HarperDB.
 
 ```npm i -g harperdb``` 
 
