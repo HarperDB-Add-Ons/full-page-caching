@@ -17,7 +17,7 @@ tables.PageCache.sourcedFrom({
 	// Fetch the page and update the cache
 	async get(path) {
 		const origin = config.origin.url; // get the origin URL from the config file
-		const response = await fetch(`${origin}${path}`); // Fetch the page content
+		const response = await fetch(new URL(path, origin)); // Fetch the page content
 		const pageContents = await response.bytes(); // Download the page
 		// this is the cached record to return and store in the cached table
 		return {
@@ -39,6 +39,7 @@ export class PageCache extends tables.PageCache {
 	 * @return {{cachedData: *}}
 	 */
 	get() {
+		this.getContext().sendEarlyHints('</styles.css>; rel=preload; as=style');
 		return {
 			contentType: 'text/html',
 			data: this.pageContents,
