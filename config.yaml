@@ -13,3 +13,7 @@ static: # This allows static files to be directly accessible
   files: web/**
 roles: # This can define the roles that are used in the application
   files: roles.yaml
+
+# Add origin configuration
+origin:
+  url: "https:example.com"  # Define the base URL for the origin server here
